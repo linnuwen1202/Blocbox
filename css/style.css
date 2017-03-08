@@ -1,7 +1,7 @@
+
 html, body {
   overflow-x: hidden;
-  background-color: /* Rectangle 11: */
-  background-image: #2E3449;
+  background-color: #2E3449;
 }
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -65,7 +65,7 @@ header nav div > div.left-nav{
   text-align: left;
   float: left;
   margin: 0;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 header nav div > div.center-nav {
   display: inline-block;
@@ -74,7 +74,7 @@ header nav div > div.center-nav li{
   list-style-type: none;
   display: inline-block;
   text-align: center;
-  margin: 0 2em;
+  margin: 0 1em;
   line-height: 2.6;
 } 
 header nav div > div.center-nav li a{
@@ -86,7 +86,7 @@ header nav div > div.center-nav li > a:hover {
 header nav div > div.right-nav {
   display: inline-block;
   float: right;
-  padding-right: 50px;
+  padding-right: 70px;
 }
 header nav div > div.right-nav li{
   padding: 10px 15px;
@@ -139,12 +139,13 @@ header div div div.signup-box ul li > a{
 }
 input[type="email"],
 input[type="password"] {
-  width: 350px;
+  width: 330px;
   height: 30px;
   border: 0px solid;
   font-family: Arvo;
   font-size: 15px;
   color: #595E7E;
+  padding:0 10px;
 }
 input[type="submit"] {
   width: 350px;
@@ -176,14 +177,246 @@ header div div h1{
 
 /*     FEATURES      */
 
-section[class="feature"]{
+section[class="feature"] {
   background-image: url(../images/feature.png);
-  background-position: 2px center;
+  background-position: .2 center;
   text-align: center;
-  height: 757px;
+  height: 580px;
+}
+section[class="feature"] div h1 {
+  display: inline;
+  text-align: right;
+  font-weight: 400;
+  font-size: 90px;
+  position: relative;
+  float: right;
+  right:-27px;
+  top:10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+} 
+.feature div h2.heading {
+  display: inline;
+  position: relative;
+  top: 50px;
+  left: 13%;
+}
+.benefits {
+  background: rgba(96,187,192,0.67);
+  margin-top: 70px;
+  padding-top: 20px;
+  float: left;
+  text-align: center;
+  display: block;
+  position: relative;
+  list-style-type: none;
+  box-shadow: 0 2px 4px #61BBC0;
 }
 
+/* INFORMATION PANEL */
 
+.infor {
+  background-image: linear-gradient(-227deg, #FFE6D0 0%, #FFC7A2 100%);
+  height: 470px;
+}
+.infor div{
+  text-align: left;
+  color: #595E7E;
+  font-size: 35px;
+}
+.infor h4 {
+  font-weight: 400;
+  padding: 10% 0 0;
+}
+.infor img{
+  padding-top: 45px;
+}
+
+/*  PRICING */
+
+.pricing {
+  background-image: url(../images/cost.png);
+  height: 664px;
+  text-align: center;
+  color: #000000;
+}
+.pricing h1 {
+  text-align: left;
+  font-size: 90px;
+  font-weight: 400;
+  display: inline;
+  color: #FFF4EC;
+}
+.pricing h2{
+  display: inline;
+  padding-right: 20px;
+  color: #FFF4EC;
+}
+ .pricing ul {
+  margin:0 auto;
+  padding: 2em 0;
+ }
+ .pricing ul li {
+  list-style-type: none;
+ }
+ .pricing ul li ul li {
+  margin-bottom: 10px;
+ }
+ .box {
+  padding:0 15px 15px;
+  background-color: #FFF4EC;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  min-height: 439px;
+  position: relative;
+  margin-top: 25px;
+ }
+.box h4 {
+  font-size:50px;
+  font-weight: normal;
+  margin:40px 0 10px;
+  color:#0089A0;
+ }
+.box h3 {
+  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-image: linear-gradient(-180deg, #F2AA7A 0%, #E47325 100%);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
+  left:0;
+  right:0;
+  top:0;
+  text-align: center;
+  margin:0 -15px 40px;
+  padding:10px 0;
+  color: #FCFAFA;
+ }
+.box.middle {
+  min-height: 485px;
+  margin-top:0px;
+ }
+.box h4 span {
+  font-size:32px;
+  vertical-align: top;
+ }
+.box h4 span.month {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color:#0089A0;
+  font-size:20px;
+  vertical-align: middle;
+}
+.btn {
+  width: 80%;
+  background-color: #2E3449;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border: none;
+  font-family: Arvo;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 6px;
+  position: absolute;
+  bottom:20px;
+}
+/*     TESTIMONIAL */
+.testimonial {
+  /* Rectangle 11: */
+  background-image: url(../images/review.png);
+  height: 645px;
+}
+.testimonial h1 {
+  float: right;
+  font-weight: 400;
+  font-size: 90px;
+  position: relative;
+  float: right;
+  right: 17px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.testimonial h2 {
+  display: inline;
+  position: relative;
+  top: 40px;
+  left: 40%;
+}
+img {
+  margin: 0 auto;
+}
+.one {
+  list-style-type: none;
+  margin: 0 auto;
+}
+blockquote {
+  width: 600px;
+  text-align: left;
+  padding-left: 270px;
+}
+.one p {
+  font-family: Arvo;
+  padding-left: 310px;
+}
+
+/* SOCIAL */
+.social {
+  height:60px;
+  background-image: linear-gradient(-248deg, #FFE6D0 0%, #FFC7A2 96%);
+}
+.social ul {
+  list-style-type: none;
+  margin: auto auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.social ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.social ul li a {
+  background: white;
+  height: 40px;
+  width:40px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #0089A0;
+}
+.social ul li a i {
+  position: relative;
+  top:30%;
+  left: 0;
+  right: 0;
+}
+/* FOOTER */
+.middle-footer-block ul li {
+  list-style-type: none;
+  display: inline;
+}
+.middle-footer-block ul {
+  width: 600px;
+  padding-top: 10px;
+  color: #FFFFFF;
+  padding-right: 20px
+}
+.middle-footer-block ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.right-footer-block img {
+  float: right;
+  padding-top: 10px;
+}
+.left-footer-block {
+  float: left;
+  padding-top: 10px;
+  width: 200px;
+}
+.left-footer-block p {
+  font-size: 14px;
+}
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
