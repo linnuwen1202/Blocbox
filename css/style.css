@@ -495,36 +495,37 @@ blockquote {
   text-transform: uppercase;
   font-weight: 400;
   background: #343A54;
-  font-size: 14px;
+  font-size: 10px;
   color: #FFFFFF;
   letter-spacing: 2.5px;
-  height: 30px;
-  padding-top: 15px;
-  padding-left: 10px;
+  padding: 10px 0 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .items p.selected {
   background:#3B4360;
 }
 ul.dashboard-sub {
   padding:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .outside {
   list-style-type: none;
-  height: 30px;
-  padding-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
   font-weight: 400;
   background: #343A54;
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 2.5px;
-  height: 30px;
 }
 .outside a {
   color: #FFFFFF;
   text-decoration: none;
   letter-spacing: 1.5px;
-  font-size: 15px;
+  font-size: 10px;
 }
 .outside i {
   padding-right: 10px;
@@ -544,7 +545,7 @@ ul.dashboard-sub {
   height:35px;
   width:35px;
   border-radius: 50%;
-  margin-left:10px;
+  margin-left:25px;
   display: inline-block;
 }
 .user-name p{
@@ -552,11 +553,14 @@ ul.dashboard-sub {
   vertical-align: top;
   padding-top: 8px;
   font-weight: 400;
+  font-size: 12px;
   margin:0 0 0 10px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 .inside ul li {
   list-style-type: none;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 .inside ul li a{
@@ -580,35 +584,45 @@ ul.dashboard-sub {
   position: relative;
  }
 .content .header {
-  margin:0 1% 20px;
+  margin:0 0 20px;
+  position:relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 100;
 }
 .content .header h1 {
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   font-weight: 100;
   background-image: linear-gradient(-180deg, #F4AC4C 0%, #E47325 100%); 
-  width: 800px;
+  width:100%;
   margin:0 0 30px;
   font-size: 20px;
   color: #FFFFFF;
   line-height: 44px;
-  float: left;
-  display:inline-block;
+  display:block;
   padding-left: 10px;
   height: 46px;
 }
+.content .container {
+  position: relative;
+  top: 60px;
+}
 .menu li a.btn {
-  float:right;
   position: relative;
   width: auto;
-  display: inline;
-  margin-top: 15px;
   background-image: linear-gradient(0deg, #0089A0 0%, #61BBC0 100%);
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 2.5px;
   border-radius: 0;
-  width: 140px;
   text-align: center;
+  position: relative;
+  top: 0;
+  padding: 11px 0;
+  width: 100%;
+  display: block;
 }
 .content-item {
   width:96%;
@@ -661,7 +675,46 @@ ul.dashboard-sub {
      width:23%;
      margin:0 1% 25px;
    }
+   .content .header {
+    margin:0 0 20px;
+    position:fixed;
+    left: 14.66666667%;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 100;
   }
+  .content .header h1 {
+    font-family: "Arvo", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    background-image: linear-gradient(-180deg, #F4AC4C 0%, #E47325 100%); 
+    width:80%;
+    margin:0 0 30px;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 44px;
+    display:inline-block;
+    padding-left: 10px;
+    height: 46px;
+  }
+  .content .container {
+    position: relative;
+    top: 60px;
+  }
+  .menu li a.btn {
+    position: relative;
+    width: auto;
+    background-image: linear-gradient(0deg, #0089A0 0%, #61BBC0 100%);
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+    border-radius: 0;
+    text-align: center;
+    position: relative;
+    top: 0;
+    padding: 11px 0;
+  }
+}
   .item-box {
    display:block;
    height:230px;
@@ -725,6 +778,7 @@ ul.dashboard-sub {
   .container {
     width: 750px;
   }
+  
 }
 @media (min-width: 992px) {
   .container{
